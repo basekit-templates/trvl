@@ -4,11 +4,9 @@
 
 
 <header class="template-header">
-    <div class="wrapper clearfix">
-        <div class="companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
+     <div class="wrapper clearfix">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
     </div>
 </header>
@@ -19,7 +17,7 @@
 
 <div class="main wrapper clearfix">
   {{zone('main')|raw}}
-</div>  
+</div>
 
 <footer class="template-footer">
     <div class="wrapper clearfix">
