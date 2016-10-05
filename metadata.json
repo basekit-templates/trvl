@@ -1,7 +1,7 @@
 {
 	"name":"Trvl",
 	"thumbnail":"trvl.png",
-	"screenshot":"trvl.png",
+	"screenshot":"trvl-screenshot.jpg",
 	"templateType":"standard",
 	"pageTypes":["home"],
     "tags": {
