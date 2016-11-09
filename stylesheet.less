@@ -892,7 +892,9 @@ button.btn,
 .widget.feature .feature-btn button,
 .widget.feature .feature-bgimg .content button,
 .basket-summary-empty-cta,
-.ecombasket-summary-link {
+.ecombasket-summary-link,
+.advancedcontactform fieldset button
+ {
 	outline: none;
 	padding: 8px 15px;
 	margin: 0;
@@ -942,11 +944,15 @@ button.btn,
 .widget.contactform fieldset textarea,
 .widget.profile form fieldset input,
 .signupform fieldset input,
+.advancedcontactform form input[type=email], 
+.advancedcontactform form input[type=text],
 input[type="password"],
 input[type="search"],
 input[type="email"],
 input[type="text"],
-select {
+select,
+.advancedcontactform form select,
+.advancedcontactform fieldset textarea  {
 	padding: 4px 8px;
 	height: 40px;
 	width: 100%;
@@ -987,7 +993,8 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 
 
 .widget.contactform fieldset textarea,
-textarea {
+textarea,
+.advancedcontactform fieldset textarea {
 	min-height: 140px;
 	height: auto;
 	resize: vertical;
@@ -996,31 +1003,40 @@ textarea {
 }
 
 
-/* ===============================
-	 CONTACT FORM WIDGET
-	 =============================== */
+/* 	=================================
+	 CONTACT FORM AND ADVANCED FORM
+	================================= */
 
-.widget.contactform form {
+.widget.contactform form,
+.advancedcontactform form {
 		display: block;
 		margin-bottom: 20px;
 		background-color: none;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.advancedcontactform fieldset {
 		border: none;
 		padding: 0;
 }
 
-.widget.contactform fieldset label {
-		width: 100%;
-		float: left;
-		font-family:@font-swatch4-font-family;
-		font-size:@font-swatch4-font-size;
-		font-weight:@font-swatch4-font-weight;
-		line-height:@font-swatch4-line-height;
-		color:@font-swatch4-color;
-		letter-spacing: @font-swatch4-letter-spacing;
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label {
+	width: 100%;
+	float: left;
 }
+
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label,
+.advancedcontactform .option-list .option-item .label {
+	font-family:@font-swatch4-font-family;
+	font-size:@font-swatch4-font-size;
+	font-weight:@font-swatch4-font-weight;
+	line-height:@font-swatch4-line-height;
+	color:@font-swatch4-color;
+	letter-spacing: @font-swatch4-letter-spacing;
+}
+
 
 .widget.contactform fieldset button.btn.justifyleft
 {
@@ -1048,6 +1064,14 @@ textarea {
 
 .widget.contactform fieldset button.btn.bold {
 		font-weight: bold;
+}
+
+.advancedcontactform .option-list {
+	padding: 1em 0;
+}
+
+.advancedcontactform fieldset button {
+	margin-top: 20px;
 }
 
 /*  ===============================
