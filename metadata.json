@@ -1,5 +1,6 @@
 {
 	"name":"Trvl",
+	"versionTenCompatible": 1,
 	"thumbnail":"trvl.png",
 	"screenshot":"trvl-screenshot.jpg",
 	"templateType":"standard",
